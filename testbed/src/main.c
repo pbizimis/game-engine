@@ -1,9 +1,7 @@
-#include <core/logger.h>
 #include <core/asserts.h>
-
+#include <core/logger.h>
 
 int main(void) {
-
     log_output(0, "log level 0 %d %f", 12, 3.8f);
     log_output(1, "log level 0", "v1", "v2");
     log_output(2, "log level 0", "v1", "v2");

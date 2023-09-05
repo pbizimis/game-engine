@@ -1,7 +1,8 @@
 #pragma once
 
-#include "defines.h"
 #include <stdbool.h>
+
+#include "defines.h"
 
 #define LOG_WARN_ENABLED 1
 #define LOG_INFO_ENABLED 1
@@ -15,12 +16,12 @@
 #endif
 
 typedef enum logger_lever {
-  LOG_LEVEL_FATAL = 0,
-  LOG_LEVEL_ERROR = 1,
-  LOG_LEVEL_WARN = 2,
-  LOG_LEVEL_INFO = 3,
-  LOG_LEVEL_DEBUG = 4,
-  LOG_LEVEL_TRACE = 5,
+    LOG_LEVEL_FATAL = 0,
+    LOG_LEVEL_ERROR = 1,
+    LOG_LEVEL_WARN = 2,
+    LOG_LEVEL_INFO = 3,
+    LOG_LEVEL_DEBUG = 4,
+    LOG_LEVEL_TRACE = 5,
 } log_level;
 
 bool init_logging();
